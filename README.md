@@ -3,7 +3,7 @@
 # '시네톡 | CineTalk' 사이트 제작
 
 <br>
-<p align=center><img src="#" width="300"></p>
+<p align=center><img src="https://github.com/hjinn0813/cinetalk/blob/devel/public/logo.png" width="300"></p>
 <br>
 토이 프로젝트로 만든 영화 리뷰 기록 및 공유 사이트 '시네톡'입니다.
 <br>
