@@ -1,24 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
-import Main from './pages/main';
-import Login from './pages/login';
-import Mypage from './pages/mypage';
-import Library from './pages/library';
-import Review from './pages/review';
-import Write from './pages/write';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Main from './pages/Main';
+import Login from './pages/Login';
+import MyPage from './pages/MyPage';
+import Watched from './pages/Watched';
+import Review from './pages/Review';
+import Write from './pages/Write';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="login" element={<Login />} />
-          <Route path="mypage" element={<Mypage />} />
-          <Route path="library" element={<Library />} />
-          <Route path="review" element={<Review />} />
-          <Route path="write" element={<Write />} />
-        </Routes>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="MyPage" element={<MyPage />} />
+        <Route path="Watched" element={<Watched />} />
+        <Route path="Review" element={<Review />} />
+        <Route path="Write" element={<Write />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
