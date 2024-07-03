@@ -17,7 +17,7 @@ https://github.com/hjinn0813/CineTalk
 
 ## 👨‍🏫 프로젝트 소개
 
-- **기획 배경** : 
+- **기획 배경** :
 
 영화를 보고 리뷰를 기록하는게 취미인데, 사용 중인 관련 어플에서 약간의 불편함을 느꼈다.
 
@@ -50,6 +50,11 @@ https://github.com/hjinn0813/CineTalk
 ## 🛠 기술 스택
 
 - **Frontend**
+  ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+  ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+  ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=Sass&logoColor=white)
 
 - **Version Control**
 
@@ -70,6 +75,7 @@ https://github.com/hjinn0813/CineTalk
 ## 📁 프로젝트 구조
 
 ```bash
+
 ```
 
 ---
