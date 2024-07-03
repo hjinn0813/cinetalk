@@ -1,6 +1,6 @@
 <div align=left>
 
-# '시네톡 | CineTalk' 사이트 제작
+# '시네톡 | Cinetalk' 사이트 제작
 
 <br>
 <p align=center><img src="https://github.com/hjinn0813/cinetalk/blob/devel/src/assets/logo.png" width="300"></p>
@@ -11,7 +11,7 @@
 
 ## 💻 배포 주소
 
-https://github.com/hjinn0813/CineTalk
+https://github.com/hjinn0813/cinetalk
 <br>
 <br>
 
