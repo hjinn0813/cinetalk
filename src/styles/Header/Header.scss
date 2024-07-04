@@ -1,1 +1,61 @@
 // header
+@import '../root.scss';
+
+.header {
+  border-bottom: 1.5px solid $main-blue;
+  font-weight: 500;
+  padding: 0.25rem 1.25rem;
+  font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 9.375rem;
+
+  @media (max-width: 480px) {
+    // 480 이하일때 로고 크기 변경
+    width: 7.5rem;
+  }
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.25rem 0;
+  min-width: 4.0625rem;
+
+  @media (max-width: 480px) {
+    min-width: 3.125rem;
+  }
+}
+
+.icon {
+  @media (max-width: 480px) {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+
+.header-txt {
+  @media (max-width: 480px) {
+    // 480 이하일때 텍스트 숨김
+    display: none;
+  }
+}

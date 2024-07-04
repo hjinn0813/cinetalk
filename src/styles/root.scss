@@ -1,0 +1,17 @@
+// 공통 스타일 설정
+$main-blue: #1e90ff;
+$sub-white: #ffffff;
+$sub-gray: #a9a9a9;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+  font-family: 'Noto Sans KR';
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+a {
+  text-decoration: none !important;
+}
