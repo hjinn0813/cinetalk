@@ -12,7 +12,7 @@ export default function Footer() {
           <div style={{ display: 'inline-block' }}>
             <div className="foot-logo">
               <Link to="/">
-                <div className="logo">cinetalk</div>
+                <div className="txt-logo">cinetalk</div>
                 {/* 로고 클릭시 홈으로 이동 */}
               </Link>
             </div>

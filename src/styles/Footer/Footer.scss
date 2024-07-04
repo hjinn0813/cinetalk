@@ -10,16 +10,14 @@
 
 .footer {
   background-color: $main-blue;
-  height: 15.625rem;
-  margin-top: auto;
+  height: auto;
 }
 .foot-container {
-  padding: 1.25rem;
-  margin: 1.25rem;
+  padding: 2.5rem;
   position: relative;
 }
 
-.logo {
+.txt-logo {
   color: $sub-white;
   font-family: 'GmarketSansMedium';
   font-size: 1.75rem;
