@@ -1,1 +1,50 @@
 // footer
+@import '../root.scss';
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer {
+  background-color: $main-blue;
+  height: 15.625rem;
+  margin-top: auto;
+}
+.foot-container {
+  padding: 1.25rem;
+  position: relative;
+}
+
+.logo {
+  color: $sub-white;
+  font-family: 'GmarketSansMedium';
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.foot-info {
+  color: $sub-white;
+  font-size: 0.875rem;
+}
+.copyright {
+  color: $sub-white;
+  font-family: 'GmarketSansMedium';
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.right-text {
+  float: right;
+  padding: 2.5rem 0;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.right-up,
+.right-down {
+  margin: 0.75rem 0;
+}
