@@ -1,7 +1,24 @@
 // 마이 페이지
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/MyPage/MyPage.scss';
 
 export default function Mypage() {
-  return <div>mypage</div>;
+  return (
+    <div>
+      <div className="mypage-container">
+        <div className="page-title">MY PAGE</div>
+        <div className="profile">
+          <div className="nickname">홍길동</div>
+        </div>
+        <div className="profile-btns">
+          <button>
+            <Link to="/Watched">라이브러리</Link>
+          </button>
+          <button>본 작품 캘린더</button>
+          <button>본 작품 통계</button>
+        </div>
+      </div>
+    </div>
+  );
 }
