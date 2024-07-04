@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../../styles/Header/Header.scss';
 
-import { ReactComponent as Book } from '../../assets/Header/Book.svg';
-import { ReactComponent as Person } from '../../assets/Header/Person.svg';
+import { ReactComponent as Posts } from '../../assets/Header/Posts.svg';
+import { ReactComponent as Account } from '../../assets/Header/Account.svg';
 import { ReactComponent as Friends } from '../../assets/Header/Friends.svg';
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
           <div className="icon-container">
             <div className="header-btns">
               <Link to="#" className="header-link">
-                <Book className="icon" />
+                <Posts className="icon" />
               </Link>
               <Link to="#" className="header-link">
                 <span className="header-txt">New</span>
@@ -38,7 +38,7 @@ export default function Header() {
             </div>
             <div className="header-btns">
               <Link to="/MyPage" className="header-link">
-                <Person className="icon" />
+                <Account className="icon" />
               </Link>
               <Link to="/MyPage" className="header-link">
                 <span className="header-txt">My Page</span>

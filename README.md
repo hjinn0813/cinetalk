@@ -25,7 +25,7 @@ https://github.com/hjinn0813/cinetalk
 
 - **개발기간 및 과정**
 
-  - 2024.07.01 ~ 07.03 : 기획
+  - 2024.07.01 ~ 07.04 : 기획
 
   - 2024.07.03 ~ : 개발
 
@@ -50,7 +50,7 @@ https://github.com/hjinn0813/cinetalk
 ## 🛠 기술 스택
 
 - **Frontend**
-  
+
   ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
   ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -65,7 +65,7 @@ https://github.com/hjinn0813/cinetalk
 - **Development Tool**
 
   ![VScode](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-<br>
+  <br>
 
 ## 📌 API
 
