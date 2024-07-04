@@ -1,0 +1,19 @@
+// 메인 페이지 디자인
+
+@import '../root.scss';
+
+.main-container {
+  margin: 3.75rem 1.25rem;
+  padding: 0 1.25rem;
+}
+
+.main-item {
+  margin: 2rem 0;
+}
+
+.new,
+.friends {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+}

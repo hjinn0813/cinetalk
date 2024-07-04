@@ -1,0 +1,29 @@
+// 리뷰 박스 디자인
+
+@import '../root.scss';
+
+.main-box {
+  border: 1px solid $main-blue;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 40%;
+  flex: 0 0 auto;
+}
+
+.main-movie-title {
+  font-size: 0.875rem;
+}
+.main-post-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.main-author {
+  color: $sub-gray;
+  font-size: 0.875rem;
+}
+
+.main-movie-title,
+.main-post-title,
+.main-author {
+  margin: 0.5rem;
+}
