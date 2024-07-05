@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "Movie_Name": "인터스텔라",
+    "Post_Title": "웅장한 우주 서사시",
+    "author": "이도현"
+  },
+  {
+    "id": 2,
+    "Movie_Name": "라라랜드",
+    "Post_Title": "꿈과 사랑의 향연",
+    "author": "박소연"
+  },
+  {
+    "id": 3,
+    "Movie_Name": "아가씨",
+    "Post_Title": "교묘하게 짜여진 속임수 이야기",
+    "author": "최성훈"
+  },
+  {
+    "id": 4,
+    "Movie_Name": "인셉션",
+    "Post_Title": "꿈속의 꿈을 여행하다",
+    "author": "김혜린"
+  },
+  {
+    "id": 5,
+    "Movie_Name": "기쿠지로의 여름",
+    "Post_Title": "따뜻한 여름 이야기",
+    "author": "정수빈"
+  },
+  {
+    "id": 6,
+    "Movie_Name": "소울",
+    "Post_Title": "삶과 음악의 의미를 찾다",
+    "author": "이상민"
+  }
+]

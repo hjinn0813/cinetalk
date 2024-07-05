@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "Movie_Name": "기생충",
+    "Post_Title": "사회적 논평의 걸작",
+    "author": "김지수"
+  },
+  {
+    "id": 2,
+    "Movie_Name": "올드보이",
+    "Post_Title": "스릴 넘치고 예측 불허의 이야기",
+    "author": "박현우"
+  },
+  {
+    "id": 3,
+    "Movie_Name": "부산행",
+    "Post_Title": "심장을 뛰게 하는 좀비 스릴러",
+    "author": "이민지"
+  },
+  {
+    "id": 4,
+    "Movie_Name": "어벤져스: 엔드게임",
+    "Post_Title": "마블의 대서사시 완결",
+    "author": "최영준"
+  },
+  {
+    "id": 5,
+    "Movie_Name": "살인의 추억",
+    "Post_Title": "몰입감 넘치는 실화 범죄 드라마",
+    "author": "정은서"
+  },
+  {
+    "id": 6,
+    "Movie_Name": "버닝",
+    "Post_Title": "미스터리한 영화",
+    "author": "한대현"
+  }
+]
