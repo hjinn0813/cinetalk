@@ -1,5 +1,6 @@
 // 라이브러리 (개인의 리뷰 목록) 페이지
 import React from 'react';
+import { Link } from 'react-router-dom';
 import WatchedPoster from '../components/Watched/WatchedPoster';
 import LibraryLists from '../components/Watched/LibraryLists.json';
 import '../styles/Watched/Watched.scss';
@@ -32,12 +33,14 @@ export default function Watched() {
       <div className="library-title">LIBRARY</div>
       <div className="library-list">
         {LibraryLists.map((card) => (
-          <WatchedPoster
-            key={card.id}
-            poster={posterImages[card.poster]}
-            title={card.title}
-            date={card.date}
-          />
+          <Link to="/Review">
+            <WatchedPoster
+              key={card.id}
+              poster={posterImages[card.poster]}
+              title={card.title}
+              date={card.date}
+            />
+          </Link>
         ))}
       </div>
     </div>
