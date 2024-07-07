@@ -33,7 +33,7 @@ export default function Watched() {
       <div className="library-title">LIBRARY</div>
       <div className="library-list">
         {LibraryLists.map((card) => (
-          <Link to="/Review">
+          <Link key={card.id} to={`/Review/${card.id}`}>
             <WatchedPoster
               key={card.id}
               poster={posterImages[card.poster]}

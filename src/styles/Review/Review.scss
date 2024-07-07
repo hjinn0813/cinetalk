@@ -1,0 +1,9 @@
+// 리뷰 상세보기 페이지 디자인
+@import '../root.scss';
+
+.r-box {
+  width: 300px;
+  height: auto;
+  border: 1.5px solid $main-blue;
+  border-radius: 8px;
+}
