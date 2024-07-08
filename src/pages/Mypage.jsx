@@ -12,11 +12,11 @@ export default function Mypage() {
           <div className="nickname">홍길동</div>
         </div>
         <div className="profile-btns">
-          <button>
+          <button className="m-btn">
             <Link to="/Watched">라이브러리</Link>
           </button>
-          <button>본 작품 캘린더</button>
-          <button>본 작품 통계</button>
+          <button className="m-btn">본 작품 캘린더</button>
+          <button className="m-btn">본 작품 통계</button>
         </div>
       </div>
     </div>
