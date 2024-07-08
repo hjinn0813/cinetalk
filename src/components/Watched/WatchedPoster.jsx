@@ -6,7 +6,7 @@ export default function WatchedPoster({ poster, title, date }) {
   return (
     <div className="w-container">
       <div className="w-box">
-        <img className="poster" src={poster} alt={poster} />
+        <img className="w-poster" src={poster} alt={poster} />
         <div className="w-info">
           <div className="w_title">{title}</div>
           <div className="w_date">{date}</div>
