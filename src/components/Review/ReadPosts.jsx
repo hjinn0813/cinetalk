@@ -3,15 +3,19 @@ import React from 'react';
 import '../../styles/Review/ReadPosts.scss';
 
 export default function ReadPosts({ poster, title, date, body }) {
+  const posterImage = require(`../../assets/Watched/${poster}.jpg`);
+
   return (
     <div className="r-container">
       <div className="r-box">
-        <img className="poster" src={poster} alt={poster} />
         <div className="r-info">
-          <div className="r_title">{title}</div>
-          <div className="r_date">{date}</div>
-          <div className="r_body">{body}</div>
+          <img className="r-poster" src={posterImage} alt="poster" />
+          <div>
+            <div className="r-title">{title}</div>
+            <div className="r-date">{date}</div>
+          </div>
         </div>
+        <div className="r-body">{body}</div>
       </div>
     </div>
   );

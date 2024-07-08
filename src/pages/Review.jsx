@@ -15,7 +15,8 @@ export default function Review() {
   }
 
   return (
-    <div>
+    <div class="r-wrap">
+      <div class="rp-title">리뷰 상세보기</div>
       <ReadPosts
         poster={post.poster}
         title={post.title}
