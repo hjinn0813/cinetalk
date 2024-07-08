@@ -14,11 +14,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="MyPage" element={<MyPage />} />
-        <Route path="Watched" element={<Watched />} />
-        <Route path="Review" element={<Review />} />
-        <Route path="Write" element={<Write />} />
+        <Route path="login" element={<Login />} />
+        <Route path="mypage" element={<MyPage />} />
+        <Route path="watched" element={<Watched />} />
+        <Route path="review/:id" element={<Review />} />
+        <Route path="write" element={<Write />} />
       </Routes>
       <Footer />
     </div>
