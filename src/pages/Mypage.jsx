@@ -15,6 +15,9 @@ export default function Mypage() {
           <button className="m-btn">
             <Link to="/Watched">라이브러리</Link>
           </button>
+          <button className="m-btn">
+            <Link to="/Write">리뷰 작성하기</Link>
+          </button>
           <button className="m-btn">본 작품 캘린더</button>
           <button className="m-btn">본 작품 통계</button>
         </div>
