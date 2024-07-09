@@ -1,0 +1,76 @@
+// 리뷰 작성하기 페이지 디자인
+@import '../root.scss';
+
+.write-container {
+  margin: 5.625rem 2.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.w-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.75rem 0;
+  margin: 1.75rem 0;
+}
+
+.inputarea {
+  border: 1.5px solid $main-blue;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.title-area,
+.body-area,
+.date-area,
+.url-area {
+  margin: 12px 0;
+}
+
+.ipt-title,
+.ipt-url {
+  width: 600px;
+  height: 20px;
+  padding: 8px;
+}
+.ipt-body {
+  height: auto;
+  width: 600px;
+  padding: 8px;
+}
+.ipt-date {
+  width: 300px;
+  padding: 8px;
+}
+
+.write-toggle {
+  margin: 28px 0;
+}
+.tg-btn {
+  display: flex;
+  margin: 12px 0;
+}
+
+.apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+.apply-btn {
+  font-size: 1.125rem;
+  background-color: $main-blue;
+  color: $sub-white;
+  border: none;
+  border-radius: 8px;
+  padding: 1.25rem;
+  width: 18.75rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
