@@ -1,6 +1,6 @@
 // header
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../../styles/Header/Header.scss';
 
@@ -8,17 +8,9 @@ import { ReactComponent as Posts } from '../../assets/Header/Posts.svg';
 import { ReactComponent as Account } from '../../assets/Header/Account.svg';
 import { ReactComponent as Friends } from '../../assets/Header/Friends.svg';
 import { ReactComponent as LogIn } from '../../assets/Header/LogIn.svg';
-import { ReactComponent as LogOut } from '../../assets/Header/LogOut.svg';
 
 export default function Header() {
   const isLoggedIn = localStorage.getItem('isLoggedIn');
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    // 로그아웃 처리
-    localStorage.removeItem('isLoggedIn'); // 로그인 상태 삭제
-    navigate('/'); // 홈으로 리디렉션
-  };
 
   return (
     <>
