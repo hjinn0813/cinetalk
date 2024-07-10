@@ -1,16 +1,27 @@
 // header
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../../styles/Header/Header.scss';
 
 import { ReactComponent as Posts } from '../../assets/Header/Posts.svg';
 import { ReactComponent as Account } from '../../assets/Header/Account.svg';
 import { ReactComponent as Friends } from '../../assets/Header/Friends.svg';
+import { ReactComponent as LogIn } from '../../assets/Header/LogIn.svg';
+import { ReactComponent as LogOut } from '../../assets/Header/LogOut.svg';
 
 export default function Header() {
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // 로그아웃 처리
+    localStorage.removeItem('isLoggedIn'); // 로그인 상태 삭제
+    navigate('/'); // 홈으로 리디렉션
+  };
+
   return (
-    <div>
+    <>
       <header className="header">
         <div className="container">
           <div className="main-logo">
@@ -37,16 +48,32 @@ export default function Header() {
               </Link>
             </div>
             <div className="header-btns">
-              <Link to="/MyPage" className="header-link">
-                <Account className="icon" />
-              </Link>
-              <Link to="/MyPage" className="header-link">
-                <span className="header-txt">My Page</span>
-              </Link>
+              {isLoggedIn ? (
+                <>
+                  <Link to="/MyPage" className="header-link">
+                    <Account className="icon" />
+                  </Link>
+                </>
+              ) : (
+                <Link to="/login" className="header-link">
+                  <LogIn className="icon" />
+                </Link>
+              )}
+              {isLoggedIn ? (
+                <>
+                  <Link to="/MyPage" className="header-link">
+                    <span className="header-txt">My Page</span>
+                  </Link>
+                </>
+              ) : (
+                <Link to="/login" className="header-link">
+                  <span className="header-txt">Login</span>
+                </Link>
+              )}
             </div>
           </div>
         </div>
       </header>
-    </div>
+    </>
   );
 }
