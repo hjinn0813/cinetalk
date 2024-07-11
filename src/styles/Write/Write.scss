@@ -32,6 +32,13 @@
   margin: 12px 0;
 }
 
+.img-upload-area {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .ipt-title,
 .ipt-url {
   width: 600px;
@@ -48,6 +55,49 @@
   padding: 8px;
 }
 
+// 사진 추가 버튼 커스텀
+.choose-img {
+  width: 50px;
+  text-align: center;
+  border: 1.5px solid $main-blue;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 8px;
+  cursor: pointer;
+}
+.choose-img:hover {
+  background-color: $main-blue;
+  color: $sub-white;
+}
+#ipt-img {
+  display: none;
+}
+
+// image preview
+.img-preview-area {
+  display: flex;
+}
+.img-preview {
+  width: 100px;
+  margin: 0 12px;
+}
+.img-delete {
+  padding: 6px;
+  margin: 0 8px;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(197, 197, 197);
+}
+.img-delete:hover {
+  background-color: $sub-gray;
+  color: $sub-white;
+}
+
+// toggle btn
 .write-toggle {
   margin: 28px 0;
 }
@@ -73,4 +123,15 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ipt-title,
+  .ipt-body,
+  .ipt-url {
+    width: 350px;
+  }
+  .ipt-date {
+    width: 250px;
+  }
 }
