@@ -8,6 +8,7 @@ import { ReactComponent as Posts } from '../../assets/Header/Posts.svg';
 import { ReactComponent as Account } from '../../assets/Header/Account.svg';
 import { ReactComponent as Friends } from '../../assets/Header/Friends.svg';
 import { ReactComponent as LogIn } from '../../assets/Header/LogIn.svg';
+import { ReactComponent as Search } from '../../assets/Header/Search.svg';
 
 export default function Header() {
   const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -23,6 +24,14 @@ export default function Header() {
             </Link>
           </div>
           <div className="icon-container">
+            <div className="header-btns">
+              <Link to="/Search" className="header-link">
+                <Search className="icon" />
+              </Link>
+              <Link to="/Search" className="header-link">
+                <span className="header-txt">Search</span>
+              </Link>
+            </div>
             <div className="header-btns">
               <Link to="#" className="header-link">
                 <Posts className="icon" />
