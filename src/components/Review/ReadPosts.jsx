@@ -10,7 +10,7 @@ export default function ReadPosts({ poster, title, date, body }) {
       <div className="r-box">
         <div className="r-info">
           <img className="r-poster" src={posterImage} alt="poster" />
-          <div>
+          <div className="r-text">
             <div className="r-title">{title}</div>
             <div className="r-date">{date}</div>
           </div>

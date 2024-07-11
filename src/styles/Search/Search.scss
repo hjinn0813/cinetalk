@@ -27,3 +27,8 @@
 .movie-item {
   margin: 16px 0;
 }
+@media screen and (max-width: 768px) {
+  .search-input {
+    width: 340px;
+  }
+}
