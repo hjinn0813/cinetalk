@@ -3,12 +3,12 @@
 
 .kakao-login {
   font-size: 1.125rem;
-  background-color: $KAKAO;
-  color: $sub-white;
-  border: none;
+  background-color: transparent;
+  color: $KAKAO;
+  border: 1.5px solid $KAKAO;
   border-radius: 8px;
   padding: 1.25rem;
   margin: 16px 0;
-  width: 18.75rem;
+  width: 310px;
   cursor: pointer;
 }

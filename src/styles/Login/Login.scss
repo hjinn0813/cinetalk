@@ -4,6 +4,10 @@
 .lg-wrap {
   margin: 5.625rem 2.5rem;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .lg-title {
@@ -51,6 +55,11 @@
   justify-content: center;
   cursor: pointer;
 }
+.lg-error {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0;
+}
 
 .lg-btns {
   display: flex;
@@ -59,4 +68,19 @@
   flex-direction: column;
   margin: 50px;
   padding: 30px 0;
+}
+
+// 회원가입 이동 버튼
+.register {
+  font-size: 1.125rem;
+  background-color: transparent;
+  color: $main-blue;
+  border: 1.5px solid $main-blue;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 16px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }

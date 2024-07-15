@@ -14,61 +14,97 @@ export default function Login() {
 
   // 테스트용 아이디와 비번
   const testUserId = 'cinetalk';
-  const testUserPw = 'cinetalk01';
+  const testUserPw = 'cinetalk1!';
+
+  const verifyId = () => {
+    if (!userId) {
+      setLoginError('아이디를 입력해주세요.');
+      return false;
+    } else if (
+      userId.length < 4 ||
+      userId.length > 10 ||
+      !/^[a-zA-Z0-9]+$/.test(userId)
+    ) {
+      setLoginError('아이디는 4 ~ 10자의 영문&숫자입니다.');
+      return false;
+    } else if (userId !== testUserId) {
+      setLoginError('아이디가 일치하지 않습니다.');
+      return false;
+    }
+    setLoginError('');
+    return true;
+  };
+
+  const verifyPw = () => {
+    if (!userPw) {
+      setLoginError('비밀번호를 입력해주세요.');
+      return false;
+    } else if (
+      userPw.length < 8 ||
+      userPw.length > 15 ||
+      !/[!@#$%^&*(),.?":{}|<>]/.test(userPw)
+    ) {
+      setLoginError('비밀번호는 특수문자 포함 8 ~ 15자입니다.');
+      return false;
+    } else if (userPw !== testUserPw) {
+      setLoginError('비밀번호가 일치하지 않습니다.');
+      return false;
+    }
+    setLoginError('');
+    return true;
+  };
 
   const handleLogin = async () => {
-    if (!userId || !userPw) {
-      alert('아이디와 비밀번호를 입력해주세요.');
-      return;
+    if (verifyId() && verifyPw()) {
+      // 로그인 성공시 정보 저장
+      localStorage.setItem('isLoggedIn', 'true');
+      navigate('/MyPage');
     }
+  };
 
-    // 테스트용 아이디와 비밀번호와 일치하는지 확인
-    if (userId !== testUserId || userPw !== testUserPw) {
-      alert('아이디 또는 비밀번호가 일치하지 않습니다.');
-      return;
-    }
-
-    // 로그인 성공시 (ex: 토큰 저장)
-    localStorage.setItem('isLoggedIn', 'true');
-    navigate('/MyPage');
+  // 회원가입 페이지 이동 버튼
+  const toRegister = () => {
+    navigate('/register');
   };
 
   return (
     <div className="lg-wrap">
       <div className="lg-title">Login</div>
       <div className="lg-input">
-        <label>
-          <input
-            type="text"
-            id="userId"
-            placeholder="아이디"
-            value={userId}
-            onChange={(e) => {
-              setUserId(e.target.value);
-              setLoginError('');
-            }}
-          />
-        </label>
-        <label>
-          <input
-            type="password"
-            id="password"
-            placeholder="비밀번호"
-            value={userPw}
-            onChange={(e) => {
-              setUserPw(e.target.value);
-              setLoginError('');
-            }}
-          />
-        </label>
+        <input
+          type="text"
+          id="userId"
+          placeholder="아이디"
+          value={userId}
+          onChange={(e) => {
+            setUserId(e.target.value);
+            setLoginError('');
+          }}
+          onBlur={verifyId}
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="비밀번호"
+          value={userPw}
+          onChange={(e) => {
+            setUserPw(e.target.value);
+            setLoginError('');
+          }}
+          onBlur={verifyPw}
+          // 입력 필드에서 포커스가 사라지면 호출
+        />
+        {loginError && <div className="lg-error">{loginError}</div>}
         <div className="lg-apply">
           <button className="lg-apply-btn" onClick={handleLogin}>
             확인
           </button>
         </div>
-        {loginError && <div className="lg-error">{loginError}</div>}
       </div>
       <div className="lg-btns">
+        <button className="register" onClick={toRegister}>
+          아이디로 회원가입
+        </button>
         <Kakao />
         <Naver />
       </div>
