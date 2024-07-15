@@ -42,7 +42,7 @@ https://github.com/hjinn0813/cinetalk
 ### 로그인
 
 - 테스트용 아이디, 비번 검증하여 로그인
-  
+
   - 아이디와 비번이 일치하지 않으면 alert 등장
 
 ### 마이 페이지
@@ -103,7 +103,7 @@ https://github.com/hjinn0813/cinetalk
 
 ## 📌 API
 
-- 영화진흥위원회 - 영화목록 조회 OPEN API
+- **영화진흥위원회 - 영화목록 조회 OPEN API**
 
   - 영화명, 감독명 등 키워드로 검색 가능
 
