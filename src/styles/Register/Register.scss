@@ -1,0 +1,79 @@
+// 회원가입 페이지 디자인
+@import '../root.scss';
+
+.reg-wrap {
+  margin: 5.625rem 2.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.75rem 0;
+  margin: 1.75rem 0;
+}
+
+.reg-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#userName,
+#regId,
+#regPw,
+#regPw2 {
+  border: 1.5px solid $main-blue;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin: 12px 0;
+  padding: 10px;
+  display: flex;
+}
+
+.regIdMsg,
+.regPwMsg {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+// 약관동의
+.terms {
+  margin: 30px 0;
+}
+.checkAll {
+  font-weight: 700;
+}
+.checkAll,
+.term1,
+.term2,
+.term3 {
+  margin: 6px 0;
+}
+
+// 회원가입 완료 버튼
+.regOk {
+  font-size: 1.125rem;
+  background-color: $main-blue;
+  color: $sub-white;
+  border: none;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 12px 0;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

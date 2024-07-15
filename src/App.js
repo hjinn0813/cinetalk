@@ -8,6 +8,7 @@ import Watched from './pages/Watched';
 import Review from './pages/Review';
 import Write from './pages/Write';
 import Search from './pages/Search';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="search" element={<Search />} />
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
         <Route path="mypage" element={<MyPage />} />
         <Route path="watched" element={<Watched />} />
         <Route path="review/:id" element={<Review />} />
