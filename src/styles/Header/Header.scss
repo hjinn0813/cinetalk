@@ -11,6 +11,9 @@
   @media (max-width: 480px) {
     padding: 0.25rem 1.25rem;
     line-height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -27,6 +30,9 @@
   @media (max-width: 480px) {
     // 480 이하일때 로고 크기 변경
     width: 7.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
   }
 }
 
@@ -43,7 +49,7 @@
   min-width: 4.0625rem;
 
   @media (max-width: 480px) {
-    min-width: 3.125rem;
+    min-width: 45px;
   }
 }
 
