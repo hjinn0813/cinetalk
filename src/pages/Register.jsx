@@ -22,26 +22,32 @@ export default function Register() {
     term3: false,
   });
 
-  // 아이디 검증
-  const checkId = (value) => {
-    // 테스트용 아이디 설정
-    const testUserId = 'cinetalk';
-
-    if (!value) {
-      setIdMsg('아이디를 입력하세요');
-    } else if (!/^[a-zA-Z0-9]{4,10}$/.test(value)) {
-      setIdMsg('아이디는 4 ~ 10자의 영문&숫자입니다');
-    } else if (value === testUserId) {
-      setIdMsg('사용할 수 없는 아이디입니다');
-    } else {
-      setIdMsg('사용 가능한 아이디입니다');
-    }
-  };
-
+  // 아이디 검증 및 메시지 설정
   const handleIdChange = (e) => {
     const value = e.target.value;
     setUserId(value);
-    checkId(value);
+
+    const testUserId = 'cinetalk';
+    let msg = '';
+
+    if (!value) {
+      msg = '아이디를 입력하세요';
+    } else if (!/^[a-zA-Z0-9]{4,10}$/.test(value)) {
+      msg = '아이디는 4 ~ 10자의 영문&숫자입니다';
+    } else if (value === testUserId) {
+      msg = '사용할 수 없는 아이디입니다';
+    } else {
+      msg = '사용 가능한 아이디입니다';
+    }
+
+    setIdMsg(msg);
+  };
+
+  // 아이디 입력 필드에서 포커스가 벗어날 때
+  const handleIdBlur = () => {
+    if (!userId) {
+      setIdMsg('');
+    }
   };
 
   // 비밀번호 검증
@@ -59,10 +65,18 @@ export default function Register() {
     setPwMsg(message);
   }, [userPw, userPw2]);
 
+  const handlePwBlur = () => {
+    if (!userPw && !userPw2) {
+      setPwMsg('');
+    }
+  };
+
   const checkPw = (pw, pw2) => {
     let msg = '';
 
-    if (!pw || !pw2) {
+    if (pw === '') {
+      msg = '';
+    } else if (!pw && !pw2) {
       msg = '비밀번호를 입력하세요';
     } else if (
       !/^(?=.*[!@#$%^&*(),.?":{}|<>])[a-zA-Z0-9!@#$%^&*(),.?":{}|<>]{8,15}$/.test(
@@ -73,7 +87,6 @@ export default function Register() {
     } else if (pw !== pw2) {
       msg = '비밀번호가 일치하지 않습니다';
     }
-
     return msg;
   };
 
@@ -141,6 +154,7 @@ export default function Register() {
           placeholder="아이디"
           value={userId}
           onChange={(e) => handleIdChange(e)}
+          onBlur={handleIdBlur}
         />
         <div className="regIdMsg">{idMsg}</div>
         <input
@@ -149,6 +163,7 @@ export default function Register() {
           placeholder="비밀번호"
           value={userPw}
           onChange={(e) => handlePwChange(e)}
+          onBlur={handlePwBlur}
         />
         <input
           type="password"
@@ -156,6 +171,7 @@ export default function Register() {
           placeholder="비밀번호 확인"
           value={userPw2}
           onChange={(e) => handlePwChange(e, true)}
+          onBlur={handlePwBlur}
         />
         <div className="regPwMsg">{pwMsg}</div>
       </div>
