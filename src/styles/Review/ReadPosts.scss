@@ -47,6 +47,46 @@
 
 .r-body {
   line-height: 1.8;
+  padding: 20px;
+}
+
+// 좋아요 버튼 디자인
+.r-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0 20px;
+
+  .r-like-button,
+  .r-share-button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: $main-blue;
+    border: 1.2px solid $main-blue;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $sub-gray;
+      color: $sub-white;
+      border: 1.2px solid $sub-gray;
+    }
+
+    svg {
+      margin-right: 6px;
+      font-size: 16px;
+    }
+  }
+
+  .r-like-button.liked {
+    color: $sub-white;
+    background-color: $main-blue;
+    border: 1.2px solid $main-blue;
+  }
 }
 
 @media screen and (max-width: 768px) {
