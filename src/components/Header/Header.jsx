@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../../styles/Header/Header.scss';
 
-import { ReactComponent as Posts } from '../../assets/Header/Posts.svg';
-import { ReactComponent as Account } from '../../assets/Header/Account.svg';
-import { ReactComponent as Friends } from '../../assets/Header/Friends.svg';
-import { ReactComponent as LogIn } from '../../assets/Header/LogIn.svg';
-import { ReactComponent as Search } from '../../assets/Header/Search.svg';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import LoginIcon from '@mui/icons-material/Login';
+import SearchIcon from '@mui/icons-material/Search';
+import PeopleIcon from '@mui/icons-material/People';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 export default function Header() {
   const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -26,49 +26,34 @@ export default function Header() {
           <div className="icon-container">
             <div className="header-btns">
               <Link to="/Search" className="header-link">
-                <Search className="icon" />
-              </Link>
-              <Link to="/Search" className="header-link">
-                <span className="header-txt">Search</span>
+                <SearchIcon className="icon" />
+                <div className="header-txt">Search</div>
               </Link>
             </div>
             <div className="header-btns">
               <Link to="#" className="header-link">
-                <Posts className="icon" />
-              </Link>
-              <Link to="#" className="header-link">
-                <span className="header-txt">New</span>
+                <DescriptionIcon className="icon" />
+                <div className="header-txt">New</div>
               </Link>
             </div>
             <div className="header-btns">
               <Link to="#" className="header-link">
-                <Friends className="icon" />
-              </Link>
-              <Link to="#" className="header-link">
-                <span className="header-txt">Friends</span>
+                <PeopleIcon className="icon" />
+                <div className="header-txt">Friends</div>
               </Link>
             </div>
             <div className="header-btns">
               {isLoggedIn ? (
                 <>
                   <Link to="/MyPage" className="header-link">
-                    <Account className="icon" />
+                    <AccountBoxIcon className="icon" />
+                    <div className="header-txt">My Page</div>
                   </Link>
                 </>
               ) : (
                 <Link to="/login" className="header-link">
-                  <LogIn className="icon" />
-                </Link>
-              )}
-              {isLoggedIn ? (
-                <>
-                  <Link to="/MyPage" className="header-link">
-                    <span className="header-txt">My Page</span>
-                  </Link>
-                </>
-              ) : (
-                <Link to="/login" className="header-link">
-                  <span className="header-txt">Login</span>
+                  <LoginIcon className="icon" />
+                  <div className="header-txt">Login</div>
                 </Link>
               )}
             </div>

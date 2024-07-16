@@ -47,6 +47,19 @@
   }
 }
 
+.header-link {
+  text-decoration: none;
+  color: $main-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: $sub-gray;
+  }
+}
+
 .icon {
   @media (max-width: 480px) {
     width: 1.875rem;
@@ -55,6 +68,8 @@
 }
 
 .header-txt {
+  margin: 4px 0;
+
   @media (max-width: 480px) {
     // 480 이하일때 텍스트 숨김
     display: none;
