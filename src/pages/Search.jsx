@@ -6,9 +6,12 @@ import '../styles/Search/Search.scss';
 const Search = () => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
+  const [hasSearched, setHasSearched] = useState(false);
+  const [loading, setLoading] = useState(false);
   const MOVIE_API = process.env.REACT_APP_MOVIE_API;
 
   const fetchMovies = async (searchQuery) => {
+    setLoading(true); // 검색 시작 시 로딩 상태로 설정
     try {
       const response = await fetch(
         `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${MOVIE_API}&movieNm=${searchQuery}`
@@ -21,11 +24,15 @@ const Search = () => {
       }
     } catch (error) {
       console.error('Error fetching data:', error);
+      setMovies([]);
+    } finally {
+      setLoading(false); // 검색 완료 후 로딩 상태 해제
     }
   };
 
   const handleSearch = () => {
     if (query.trim()) {
+      setHasSearched(true);
       fetchMovies(query.trim());
     }
   };
@@ -47,16 +54,18 @@ const Search = () => {
         onKeyPress={handleKeyPress}
       />
       <div className="movie-list">
-        {movies.length > 0 ? (
+        {loading ? (
+          <p>검색 중입니다...⏳</p> // 로딩 중 메시지 표시
+        ) : hasSearched && movies.length === 0 ? (
+          <p>결과를 찾을 수 없습니다!😭</p>
+        ) : (
           movies.map((movie) => (
             <div key={movie.movieCd} className="movie-item">
-              <h3>
+              <h4>
                 {movie.movieNm} ({movie.prdtYear})
-              </h3>
+              </h4>
             </div>
           ))
-        ) : (
-          <p>No results found</p>
         )}
       </div>
     </div>
