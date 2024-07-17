@@ -12,10 +12,12 @@ const Search = () => {
 
   const fetchMovies = async (searchQuery) => {
     setLoading(true); // 검색 시작 시 로딩 상태로 설정
+
+    const kobis = `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json`;
+    const URL = `${kobis}?key=${MOVIE_API}&movieNm=${searchQuery}`;
+
     try {
-      const response = await fetch(
-        `https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${MOVIE_API}&movieNm=${searchQuery}`
-      );
+      const response = await fetch(URL);
       const data = await response.json();
       if (data.movieListResult.movieList) {
         setMovies(data.movieListResult.movieList);
@@ -55,7 +57,7 @@ const Search = () => {
       />
       <div className="movie-list">
         {loading ? (
-          <p>검색 중입니다...⏳</p> // 로딩 중 메시지 표시
+          <p>검색 중입니다..⏳</p> // 로딩 중 메시지 표시
         ) : hasSearched && movies.length === 0 ? (
           <p>결과를 찾을 수 없습니다!😭</p>
         ) : (
