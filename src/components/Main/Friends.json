@@ -34,5 +34,29 @@
     "Movie_Name": "소울",
     "Post_Title": "삶과 음악의 의미를 찾다",
     "author": "이상민"
+  },
+  {
+    "id": 7,
+    "Movie_Name": "박열",
+    "Post_Title": "삶의 무게를 담은 미스터리",
+    "author": "김혜린"
+  },
+  {
+    "id": 8,
+    "Movie_Name": "위플래쉬",
+    "Post_Title": "열정과 꿈을 향한 도전",
+    "author": "박소연"
+  },
+  {
+    "id": 9,
+    "Movie_Name": "다크 나이트",
+    "Post_Title": "어둠의 기사, 배트맨의 귀환",
+    "author": "최성훈"
+  },
+  {
+    "id": 10,
+    "Movie_Name": "엑시트",
+    "Post_Title": "비극적 상황에서의 생존 이야기",
+    "author": "이도현"
   }
 ]

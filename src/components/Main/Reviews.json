@@ -34,5 +34,29 @@
     "Movie_Name": "버닝",
     "Post_Title": "미스터리한 영화",
     "author": "한대현"
+  },
+  {
+    "id": 7,
+    "Movie_Name": "인셉션",
+    "Post_Title": "꿈과 현실의 경계를 넘나드는 명작",
+    "author": "김혜진"
+  },
+  {
+    "id": 8,
+    "Movie_Name": "신과함께: 죄와 벌",
+    "Post_Title": "감동적인 판타지 드라마",
+    "author": "박준형"
+  },
+  {
+    "id": 9,
+    "Movie_Name": "포레스트 검프",
+    "Post_Title": "삶의 아름다움을 그린 영화",
+    "author": "송민호"
+  },
+  {
+    "id": 10,
+    "Movie_Name": "설국열차",
+    "Post_Title": "계급 투쟁을 그린 SF 대작",
+    "author": "이하늘"
   }
 ]
