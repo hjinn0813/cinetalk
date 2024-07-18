@@ -19,7 +19,7 @@ https://github.com/hjinn0813/cinetalk
 
 - **기획 배경** :
 
-영화를 보고 리뷰를 기록하는게 취미인데, "오직 리뷰만 기록하고 공유하는" 곳은 없다고 느꼈다.
+영화를 보고 리뷰를 기록하는게 취미인데, '리뷰'에 중점을 둔 커뮤니티는 없다고 느꼈다.
 
 → 그렇다면 직접 만들어보자는 생각으로, 영화 리뷰 기록 및 공유 사이트 '시네톡' 제작
 
@@ -35,9 +35,9 @@ https://github.com/hjinn0813/cinetalk
 
 ### Main page
 
-- 최신 리뷰, 친구들의 리뷰 보여주기
+- Header에서 로그인 여부 검증하여 다른 아이콘 출력 (로컬 스토리지)
 
-- Header에서 로그인 여부 검증하여 다른 아이콘 출력 (상태를 로컬 스토리지에 저장)
+- 최신 리뷰, 친구들의 리뷰 보여주기 (swiper slide)
 
 ### 로그인
 
@@ -103,6 +103,7 @@ https://github.com/hjinn0813/cinetalk
   ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=Sass&logoColor=white)
   ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white)
   ![MUI](https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=MUI&logoColor=white)
+  ![Swiper](https://img.shields.io/badge/swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
 
 - **Version Control**
 
