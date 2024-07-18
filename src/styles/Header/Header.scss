@@ -8,27 +8,28 @@
   font-size: 0.875rem;
   height: 3.75rem;
 
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     padding: 0.25rem 1.25rem;
-    line-height: 3.75rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
 .container {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .logo {
   width: 9.375rem;
 
-  @media (max-width: 480px) {
-    // 480 이하일때 로고 크기 변경
+  @media (max-width: 640px) {
+    // 640 이하일때 로고 크기 변경
     width: 7.5rem;
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@
   margin: 0.25rem 0;
   min-width: 4.0625rem;
 
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     min-width: 45px;
   }
 }
@@ -76,8 +77,8 @@
 .header-txt {
   margin: 4px 0;
 
-  @media (max-width: 480px) {
-    // 480 이하일때 텍스트 숨김
+  @media (max-width: 640px) {
+    // 640 이하일때 텍스트 숨김
     display: none;
   }
 }
