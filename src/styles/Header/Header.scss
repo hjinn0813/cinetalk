@@ -29,7 +29,7 @@
   width: 9.375rem;
 
   @media (max-width: 640px) {
-    // 640 이하일때 로고 크기 변경
+    // 640 이하 로고 크기 변경
     width: 7.5rem;
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@
   margin: 4px 0;
 
   @media (max-width: 640px) {
-    // 640 이하일때 텍스트 숨김
+    // 640 이하 텍스트 숨김
     display: none;
   }
 }
