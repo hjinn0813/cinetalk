@@ -97,14 +97,6 @@ export default function Main() {
           ))}
         </Swiper>
       </div>
-      <div className="main-item boxoffice">
-        <div className="ranks">오늘의 박스오피스 순위</div>
-        {/* 영진위 일간 박스오피스 API */}
-        {/* 매일 그날의 박스오피스 순위 보여주기 */}
-        {/* 매일 바뀌는 날짜를 어떻게 할 것인가.. */}
-        {/* http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key={API_KEY}&targetDt={YYYYMMDD} */}
-        {/* rank, movieNm 만 있으면 됨 */}
-      </div>
     </section>
   );
 }
