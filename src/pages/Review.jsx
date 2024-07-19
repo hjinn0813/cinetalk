@@ -16,7 +16,7 @@ export default function Review() {
   );
 
   if (!post) {
-    return <div>해당 글을 찾을 수 없습니다!😭</div>;
+    return <div className="NotFound">해당 글을 찾을 수 없습니다!😭</div>;
   }
 
   const handleDelete = () => {
