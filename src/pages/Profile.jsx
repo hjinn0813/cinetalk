@@ -1,15 +1,18 @@
 // 마이 페이지
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { logout } from '../redux/actions/authActions';
 import '../styles/Profile/Profile.scss';
 
 export default function Profile() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const handleLogout = () => {
-    // 로그아웃: 로컬 스토리지에서 로그인 상태 삭제
-    localStorage.removeItem('isLoggedIn');
-    // 로그아웃 후 홈으로 리디렉션
-    window.location.href = '/';
+    dispatch(logout());
+    navigate('/');
   };
 
   return (

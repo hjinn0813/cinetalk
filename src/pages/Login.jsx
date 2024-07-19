@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginSuccess, loginFailure } from '../redux/actions/loginActions';
+import { loginSuccess, loginFailure } from '../redux/actions/authActions';
 import Kakao from '../components/Login/Kakao';
 import Naver from '../components/Login/Naver';
 import '../styles/Login/Login.scss';
@@ -62,6 +62,8 @@ export default function Login() {
       // 로그인 성공시 정보 저장
       dispatch(loginSuccess());
       navigate('/Profile');
+    } else {
+      dispatch(loginFailure('로그인 실패!'));
     }
   };
 

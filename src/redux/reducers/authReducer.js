@@ -1,6 +1,6 @@
-// 로그인 페이지 - 리듀서 파일
+// 로그인, 로그아웃 리듀서
 
-import { LOGIN_SUCCESS, LOGIN_FAILURE } from '../actions/loginActions';
+import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from '../actions/authActions';
 
 const initialState = {
   isLoggedIn: false,
@@ -20,6 +20,12 @@ const authReducer = (state = initialState, action) => {
         ...state,
         isLoggedIn: false,
         error: action.payload,
+      };
+    case LOGOUT:
+      return {
+        ...state,
+        isLoggedIn: false,
+        error: '',
       };
     default:
       return state;
