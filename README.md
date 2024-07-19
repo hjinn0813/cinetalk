@@ -73,7 +73,7 @@ https://github.com/hjinn0813/cinetalk
 
 - 포스터, 영화제목, 작성일, 본문 등 확인 가능
 
-- `좋아요` 버튼 기능
+- `좋아요` 버튼 클릭시 디자인 변경 및 개수 카운트
 
 - `공유하기` 버튼 클릭시 URL 주소 자동 복사
 
@@ -133,7 +133,90 @@ https://github.com/hjinn0813/cinetalk
 ## 📁 프로젝트 구조
 
 ```bash
-
+📦cinetalk
+┣ 📂public
+ ┃ ┣ 📂favicon
+ ┃ ┃ ┣ 📜apple-touch-icon.png
+ ┃ ┃ ┗ 📜favicon.png
+ ┃ ┗ 📜index.html
+ ┣ 📂src
+ ┃ ┣ 📂assets
+ ┃ ┃ ┗ 📜logo.png
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📂Footer
+ ┃ ┃ ┃ ┗ 📜Footer.jsx
+ ┃ ┃ ┣ 📂Header
+ ┃ ┃ ┃ ┗ 📜Header.jsx
+ ┃ ┃ ┣ 📂Login
+ ┃ ┃ ┃ ┣ 📜Kakao.jsx
+ ┃ ┃ ┃ ┣ 📜Naver.jsx
+ ┃ ┃ ┃ ┗ 📜Oauth.js
+ ┃ ┃ ┣ 📂Main
+ ┃ ┃ ┃ ┣ 📜Friends.json
+ ┃ ┃ ┃ ┣ 📜ReviewBox.jsx
+ ┃ ┃ ┃ ┗ 📜Reviews.json
+ ┃ ┃ ┣ 📂Review
+ ┃ ┃ ┃ ┣ 📜Posts.json
+ ┃ ┃ ┃ ┗ 📜ReadPosts.jsx
+ ┃ ┃ ┣ 📂Watched
+ ┃ ┃ ┃ ┣ 📜LibraryLists.json
+ ┃ ┃ ┃ ┗ 📜WatchedPoster.jsx
+ ┃ ┃ ┗ 📂Write
+ ┃ ┃ ┃ ┗ 📜toggle.jsx
+ ┃ ┣ 📂pages
+ ┃ ┃ ┣ 📜Login.jsx
+ ┃ ┃ ┣ 📜Main.jsx
+ ┃ ┃ ┣ 📜MyPage.jsx
+ ┃ ┃ ┣ 📜Register.jsx
+ ┃ ┃ ┣ 📜Review.jsx
+ ┃ ┃ ┣ 📜Search.jsx
+ ┃ ┃ ┣ 📜Watched.jsx
+ ┃ ┃ ┗ 📜Write.jsx
+ ┃ ┣ 📂redux
+ ┃ ┃ ┣ 📂actions
+ ┃ ┃ ┃ ┣ 📜loginActions.js
+ ┃ ┃ ┃ ┗ 📜userActions.js
+ ┃ ┃ ┣ 📂reducers
+ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┣ 📜loginReducer.js
+ ┃ ┃ ┃ ┣ 📜postSlice.js
+ ┃ ┃ ┃ ┗ 📜userReducer.js
+ ┃ ┃ ┗ 📜store.js
+ ┃ ┣ 📂styles
+ ┃ ┃ ┣ 📂Footer
+ ┃ ┃ ┃ ┗ 📜Footer.scss
+ ┃ ┃ ┣ 📂Header
+ ┃ ┃ ┃ ┗ 📜Header.scss
+ ┃ ┃ ┣ 📂Login
+ ┃ ┃ ┃ ┣ 📜Kakao.scss
+ ┃ ┃ ┃ ┣ 📜Login.scss
+ ┃ ┃ ┃ ┗ 📜Naver.scss
+ ┃ ┃ ┣ 📂Main
+ ┃ ┃ ┃ ┣ 📜Main.scss
+ ┃ ┃ ┃ ┗ 📜ReviewBox.scss
+ ┃ ┃ ┣ 📂MyPage
+ ┃ ┃ ┃ ┗ 📜MyPage.scss
+ ┃ ┃ ┣ 📂Register
+ ┃ ┃ ┃ ┗ 📜Register.scss
+ ┃ ┃ ┣ 📂Review
+ ┃ ┃ ┃ ┣ 📜ReadPosts.scss
+ ┃ ┃ ┃ ┗ 📜Review.scss
+ ┃ ┃ ┣ 📂Search
+ ┃ ┃ ┃ ┗ 📜Search.scss
+ ┃ ┃ ┣ 📂Watched
+ ┃ ┃ ┃ ┣ 📜Watched.scss
+ ┃ ┃ ┃ ┗ 📜WatchedPoster.scss
+ ┃ ┃ ┣ 📂Write
+ ┃ ┃ ┃ ┣ 📜Toggle.scss
+ ┃ ┃ ┃ ┗ 📜Write.scss
+ ┃ ┃ ┗ 📜root.scss
+ ┃ ┣ 📜App.js
+ ┃ ┗ 📜index.js
+ ┣ 📜.env
+ ┣ 📜.gitignore
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┗ 📜README.md
 ```
 
 ---
