@@ -134,7 +134,7 @@ https://github.com/hjinn0813/cinetalk
 
 ```bash
 📦cinetalk
-┣ 📂public
+ ┣ 📂public
  ┃ ┣ 📂favicon
  ┃ ┃ ┣ 📜apple-touch-icon.png
  ┃ ┃ ┗ 📜favicon.png
@@ -166,7 +166,7 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┣ 📂pages
  ┃ ┃ ┣ 📜Login.jsx
  ┃ ┃ ┣ 📜Main.jsx
- ┃ ┃ ┣ 📜MyPage.jsx
+ ┃ ┃ ┣ 📜Profile.jsx
  ┃ ┃ ┣ 📜Register.jsx
  ┃ ┃ ┣ 📜Review.jsx
  ┃ ┃ ┣ 📜Search.jsx
@@ -174,11 +174,12 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┗ 📜Write.jsx
  ┃ ┣ 📂redux
  ┃ ┃ ┣ 📂actions
- ┃ ┃ ┃ ┣ 📜loginActions.js
+ ┃ ┃ ┃ ┣ 📜authActions.js
  ┃ ┃ ┃ ┗ 📜userActions.js
  ┃ ┃ ┣ 📂reducers
+ ┃ ┃ ┃ ┣ 📜authReducer.js
+ ┃ ┃ ┃ ┣ 📜headerSlice.js
  ┃ ┃ ┃ ┣ 📜index.js
- ┃ ┃ ┃ ┣ 📜loginReducer.js
  ┃ ┃ ┃ ┣ 📜postSlice.js
  ┃ ┃ ┃ ┗ 📜userReducer.js
  ┃ ┃ ┗ 📜store.js
@@ -194,8 +195,8 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┣ 📂Main
  ┃ ┃ ┃ ┣ 📜Main.scss
  ┃ ┃ ┃ ┗ 📜ReviewBox.scss
- ┃ ┃ ┣ 📂MyPage
- ┃ ┃ ┃ ┗ 📜MyPage.scss
+ ┃ ┃ ┣ 📂Profile
+ ┃ ┃ ┃ ┗ 📜Profile.scss
  ┃ ┃ ┣ 📂Register
  ┃ ┃ ┃ ┗ 📜Register.scss
  ┃ ┃ ┣ 📂Review
