@@ -1,4 +1,4 @@
-// 상세보기, 라이브러리 - 리뷰 삭제 슬라이스
+// 리뷰의 작성과 삭제 슬라이스
 
 import { createSlice } from '@reduxjs/toolkit';
 import PostsData from '../../components/Review/Posts.json';
@@ -11,6 +11,9 @@ const postsSlice = createSlice({
     lists: LibraryLists,
   },
   reducers: {
+    addPost: (state, action) => {
+      state.posts.push(action.payload);
+    },
     deletePosts: (state, action) => {
       state.posts = state.posts.filter((post) => post.id !== action.payload);
     },
@@ -20,5 +23,5 @@ const postsSlice = createSlice({
   },
 });
 
-export const { deletePosts, deleteLists } = postsSlice.actions;
+export const { addPost, deletePosts, deleteLists } = postsSlice.actions;
 export default postsSlice.reducer;
