@@ -11,6 +11,8 @@
 
 ## 💻 배포 주소
 
+https://cinetalk.vercel.app/
+
 https://github.com/hjinn0813/cinetalk
 <br>
 <br>
@@ -27,7 +29,7 @@ https://github.com/hjinn0813/cinetalk
 
   - 2024.07.01 ~ 07.04 : 기획
 
-  - 2024.07.03 ~ : 개발
+  - 2024.07.03 ~ 07.20 : 개발
 
 <br>
 
@@ -162,7 +164,7 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┃ ┣ 📜LibraryLists.json
  ┃ ┃ ┃ ┗ 📜WatchedPoster.jsx
  ┃ ┃ ┗ 📂Write
- ┃ ┃ ┃ ┗ 📜toggle.jsx
+ ┃ ┃ ┃ ┗ 📜Toggles.jsx
  ┃ ┣ 📂pages
  ┃ ┃ ┣ 📜Login.jsx
  ┃ ┃ ┣ 📜Main.jsx
@@ -208,13 +210,11 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┃ ┣ 📜Watched.scss
  ┃ ┃ ┃ ┗ 📜WatchedPoster.scss
  ┃ ┃ ┣ 📂Write
- ┃ ┃ ┃ ┣ 📜Toggle.scss
+ ┃ ┃ ┃ ┣ 📜Toggles.scss
  ┃ ┃ ┃ ┗ 📜Write.scss
  ┃ ┃ ┗ 📜root.scss
  ┃ ┣ 📜App.js
  ┃ ┗ 📜index.js
- ┣ 📜.env
- ┣ 📜.gitignore
  ┣ 📜package-lock.json
  ┣ 📜package.json
  ┗ 📜README.md
