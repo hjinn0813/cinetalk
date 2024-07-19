@@ -3,7 +3,7 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { deletePost } from '../redux/reducers/postSlice';
+import { deletePosts } from '../redux/reducers/postSlice';
 import ReadPosts from '../components/Review/ReadPosts';
 import '../styles/Review/Review.scss';
 
@@ -11,8 +11,10 @@ export default function Review() {
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  // 포스트 데이터 찾기
   const post = useSelector((state) =>
-    state.posts.find((post) => post.id === parseInt(id))
+    state.posts.posts.find((post) => post.id === parseInt(id))
   );
 
   if (!post) {
@@ -20,7 +22,7 @@ export default function Review() {
   }
 
   const handleDelete = () => {
-    dispatch(deletePost(parseInt(id)));
+    dispatch(deletePosts(Number(id)));
     alert('리뷰가 삭제되었습니다.');
     navigate('/watched');
   };
