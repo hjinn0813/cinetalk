@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './pages/Main';
 import Login from './pages/Login';
-import MyPage from './pages/MyPage.jsx';
+import Profile from './pages/Profile';
 import Watched from './pages/Watched';
 import Review from './pages/Review';
 import Write from './pages/Write';
@@ -19,7 +19,7 @@ function App() {
         <Route path="search" element={<Search />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="mypage" element={<MyPage />} />
+        <Route path="profile" element={<Profile />} />
         <Route path="watched" element={<Watched />} />
         <Route path="review/:id" element={<Review />} />
         <Route path="write" element={<Write />} />

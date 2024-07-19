@@ -61,7 +61,7 @@ export default function Login() {
     if (verifyId() && verifyPw()) {
       // 로그인 성공시 정보 저장
       dispatch(loginSuccess());
-      navigate('/MyPage');
+      navigate('/Profile');
     }
   };
 

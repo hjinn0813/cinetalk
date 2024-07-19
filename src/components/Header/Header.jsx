@@ -45,13 +45,13 @@ export default function Header() {
             <div className="header-btns">
               {isLoggedIn ? (
                 <>
-                  <Link to="/MyPage" className="header-link">
+                  <Link to="/Profile" className="header-link">
                     <AccountBoxIcon className="icon" />
                     <div className="header-txt">My Page</div>
                   </Link>
                 </>
               ) : (
-                <Link to="/login" className="header-link">
+                <Link to="/Login" className="header-link">
                   <LoginIcon className="icon" />
                   <div className="header-txt">Login</div>
                 </Link>

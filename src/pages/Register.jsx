@@ -134,7 +134,7 @@ export default function Register() {
     };
 
     dispatch(setUserInfo(userInfo));
-    navigate('/MyPage');
+    navigate('/Profile');
   };
 
   return (
