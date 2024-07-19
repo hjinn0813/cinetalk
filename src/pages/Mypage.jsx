@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/MyPage/MyPage.scss';
 
-export default function Mypage() {
+export default function MyPage() {
   const handleLogout = () => {
     // 로그아웃: 로컬 스토리지에서 로그인 상태 삭제
     localStorage.removeItem('isLoggedIn');
