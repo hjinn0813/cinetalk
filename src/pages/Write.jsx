@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 // import { addPost } from '../redux/reducers/postSlice';
-import Toggle from '../components/Write/Toggles';
+import Toggles from '../components/Write/Toggles';
 import '../styles/Write/Write.scss';
 
 export default function Write() {
@@ -141,11 +141,11 @@ export default function Write() {
         <div className="write-toggle">
           <div className="tg-btn">
             스포일러 포함&nbsp;&nbsp;
-            <Toggle checked={spoiler} onChange={() => setSpoiler(!spoiler)} />
+            <Toggles checked={spoiler} onChange={() => setSpoiler(!spoiler)} />
           </div>
           <div className="tg-btn">
             비공개 여부&nbsp;&nbsp;
-            <Toggle
+            <Toggles
               checked={isPrivate}
               onChange={() => setIsPrivate(!isPrivate)}
             />
