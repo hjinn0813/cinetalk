@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './pages/Main';
 import Login from './pages/Login';
-import MyPage from './pages/MyPage';
+import MyPage from './pages/MyPage.jsx';
 import Watched from './pages/Watched';
 import Review from './pages/Review';
 import Write from './pages/Write';
