@@ -3,10 +3,12 @@
 import { combineReducers } from 'redux';
 import userReducer from '../reducers/userReducer';
 import authReducer from '../reducers/loginReducer';
+import postReducer from '../reducers/postSlice';
 
 const rootReducer = combineReducers({
   user: userReducer,
   auth: authReducer,
+  posts: postReducer,
 });
 
 export default rootReducer;

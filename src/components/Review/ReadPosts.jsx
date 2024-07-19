@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from '@mui/icons-material/Share';
 
-export default function ReadPosts({ poster, title, date, body }) {
+export default function ReadPosts({ poster, title, date, body, onDelete }) {
   const posterImage = require(`../../assets/Watched/${poster}.jpg`);
   const [liked, setLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(0);
@@ -52,6 +52,9 @@ export default function ReadPosts({ poster, title, date, body }) {
           <div className="r-share-button" onClick={handleShareClick}>
             <ShareIcon />
             공유하기
+          </div>
+          <div className="r-delete-button" onClick={onDelete}>
+            삭제하기
           </div>
         </div>
       </div>
