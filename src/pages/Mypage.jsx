@@ -19,10 +19,14 @@ export default function Mypage() {
       </div>
       <div className="profile-btns">
         <button className="m-btn">
-          <Link to="/Watched">라이브러리</Link>
+          <Link to="/Watched" className="movingbtn">
+            라이브러리
+          </Link>
         </button>
         <button className="m-btn">
-          <Link to="/Write">리뷰 작성하기</Link>
+          <Link to="/Write" className="movingbtn">
+            리뷰 작성하기
+          </Link>
         </button>
         <button className="m-btn">본 작품 캘린더</button>
         <button className="m-btn">본 작품 통계</button>
