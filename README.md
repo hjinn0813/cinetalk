@@ -35,7 +35,7 @@ https://github.com/hjinn0813/cinetalk
 
 ### Main page
 
-- Header에서 로그인 여부 검증하여 다른 아이콘 출력 (로컬 스토리지)
+- Header에서 로그인 여부 검증하여 다른 아이콘 출력 (Redux 상태관리)
 
 - 최신 리뷰, 친구들의 리뷰 보여주기 (swiper slide)
 
@@ -61,7 +61,7 @@ https://github.com/hjinn0813/cinetalk
 
 - `라이브러리`, `리뷰 작성하기` 클릭하면 페이지 이동
 
-- `로그아웃` 버튼 기능 구현 (로컬 스토리지)
+- `로그아웃` 버튼 기능 구현 (Redux 상태관리)
 
 ### 라이브러리 (개인의 기록)
 
