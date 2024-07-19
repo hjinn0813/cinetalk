@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 // import { addPost } from '../redux/reducers/postSlice';
-import Toggle from '../components/Write/toggle';
+import Toggle from '../components/Write/Toggles';
 import '../styles/Write/Write.scss';
 
 export default function Write() {
