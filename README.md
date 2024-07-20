@@ -21,9 +21,7 @@ https://github.com/hjinn0813/cinetalk
 
 - **기획 배경** :
 
-영화를 보고 리뷰를 기록하는게 취미인데, '리뷰'에 중점을 둔 커뮤니티는 없다고 느꼈다.
-
-→ 그렇다면 직접 만들어보자는 생각으로, 영화 리뷰 기록 및 공유 사이트 '시네톡' 제작
+영화를 보고 리뷰를 기록하는게 취미여서, 영화 리뷰 기록 및 공유 사이트 '시네톡' 기획 및 제작
 
 - **개발기간 및 과정**
 
@@ -35,7 +33,7 @@ https://github.com/hjinn0813/cinetalk
 
 ## 🎬 주요 기능
 
-### Main page
+### 메인 페이지
 
 - Header에서 로그인 여부 검증하여 다른 아이콘 출력 (Redux 상태관리)
 
@@ -129,6 +127,10 @@ https://github.com/hjinn0813/cinetalk
 - **영화진흥위원회 - 영화목록 조회 OPEN API**
 
   - 영화명, 감독명 등 키워드로 검색 가능
+
+<br>
+
+## 🚀 [Trouble-shooting History (click to check)](https://github.com/hjinn0813/cinetalk/wiki/%F0%9F%9A%80-Trouble%E2%80%90shooting-History)
 
 <br>
 
