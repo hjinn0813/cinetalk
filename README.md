@@ -172,6 +172,7 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┣ 📂pages
  ┃ ┃ ┣ 📜Login.jsx
  ┃ ┃ ┣ 📜Main.jsx
+ ┃ ┃ ┣ 📜NotFound.jsx
  ┃ ┃ ┣ 📜Profile.jsx
  ┃ ┃ ┣ 📜Register.jsx
  ┃ ┃ ┣ 📜Review.jsx
@@ -216,6 +217,7 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┣ 📂Write
  ┃ ┃ ┃ ┣ 📜Toggles.scss
  ┃ ┃ ┃ ┗ 📜Write.scss
+ ┃ ┃ ┣ 📜NotFound.scss
  ┃ ┃ ┗ 📜root.scss
  ┃ ┣ 📜App.js
  ┃ ┗ 📜index.js
