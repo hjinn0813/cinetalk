@@ -9,6 +9,7 @@ import Review from './pages/Review';
 import Write from './pages/Write';
 import Search from './pages/Search';
 import Register from './pages/Register';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="watched" element={<Watched />} />
         <Route path="review/:id" element={<Review />} />
         <Route path="write" element={<Write />} />
+        <Route path="NotFound" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
