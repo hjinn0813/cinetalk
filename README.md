@@ -35,7 +35,9 @@ https://github.com/hjinn0813/cinetalk
 
 ### 메인 페이지
 
-- Header에서 로그인 여부 검증하여 다른 아이콘 출력 (Redux 상태관리)
+- Header에 호버시 컬러 변경 이벤트, 로그인 여부 검증하여 다른 아이콘 출력 (Redux 상태관리)
+
+  → friends, new 메뉴 예외처리 설정 (Not Found 페이지)
 
 - 최신 리뷰, 친구들의 리뷰 보여주기 (swiper slide)
 
@@ -115,10 +117,6 @@ https://github.com/hjinn0813/cinetalk
 - **Development Tool**
 
   ![VScode](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-- **Deploy Platform**
-
-  ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 - **Design Tool**
 
