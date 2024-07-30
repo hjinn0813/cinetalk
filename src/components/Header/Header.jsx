@@ -31,13 +31,13 @@ export default function Header() {
             </Link>
           </div>
           <div className="header-btns">
-            <Link to="/Notfound" className="header-link">
+            <Link to="/NotFound" className="header-link">
               <DescriptionIcon className="icon" />
               <div className="header-txt">New</div>
             </Link>
           </div>
           <div className="header-btns">
-            <Link to="/Notfound" className="header-link">
+            <Link to="/NotFound" className="header-link">
               <PeopleIcon className="icon" />
               <div className="header-txt">Friends</div>
             </Link>
