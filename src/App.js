@@ -24,7 +24,7 @@ function App() {
         <Route path="watched" element={<Watched />} />
         <Route path="review/:id" element={<Review />} />
         <Route path="write" element={<Write />} />
-        <Route path="NotFound" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
