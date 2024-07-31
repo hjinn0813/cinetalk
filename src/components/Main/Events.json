@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "EventPhoto": "marathon.jpg",
+    "EventName": "여름 블록버스터 마라톤",
+    "EventScript": "올여름 최고의 영화는 뭘까?"
+  },
+  {
+    "id": 2,
+    "EventPhoto": "interview.jpg",
+    "EventName": "시네톡 독점 인터뷰",
+    "EventScript": "감독 및 배우들과의 독점 인터뷰"
+  },
+  {
+    "id": 3,
+    "EventPhoto": "vote.jpg",
+    "EventName": "유저 초이스 어워즈 투표",
+    "EventScript": "투표만 해도 상품을 드려요!"
+  },
+  {
+    "id": 4,
+    "EventPhoto": "autumn.jpg",
+    "EventName": "가을 영화제 특집",
+    "EventScript": "다가오는 가을에 추천하는 영화들"
+  },
+  {
+    "id": 5,
+    "EventPhoto": "horror.jpg",
+    "EventName": "할로윈 호러 나이트",
+    "EventScript": "나는 얼마나 용감할까?"
+  }
+]

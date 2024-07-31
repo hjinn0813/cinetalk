@@ -21,10 +21,17 @@
 }
 
 .new,
-.friends {
+.friends,
+.event-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
+}
+
+.main-item .banner {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 // swiper

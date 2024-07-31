@@ -1,12 +1,18 @@
 import React from 'react';
 import '../styles/Main/Main.scss';
 import ReviewBox from '../components/Main/ReviewBox';
+import EventBox from '../components/Main/EventBox';
 import Reviews from '../components/Main/Reviews.json';
 import Friends from '../components/Main/Friends.json';
+import Events from '../components/Main/Events.json';
+
+import banner1 from '../assets/Main/banner1.jpg';
+import banner2 from '../assets/Main/banner2.png';
+import banner3 from '../assets/Main/banner3.png';
 
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -22,11 +28,11 @@ export default function Main() {
           modules={[Pagination]}
           breakpoints={{
             0: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.4,
               spaceBetween: 10,
             },
             576: {
-              slidesPerView: 2,
+              slidesPerView: 2.2,
               spaceBetween: 10,
             },
             768: {
@@ -34,7 +40,7 @@ export default function Main() {
               spaceBetween: 15,
             },
             992: {
-              slidesPerView: 3,
+              slidesPerView: 3.2,
               spaceBetween: 20,
             },
             1200: {
@@ -64,11 +70,11 @@ export default function Main() {
           modules={[Pagination]}
           breakpoints={{
             0: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.4,
               spaceBetween: 10,
             },
             576: {
-              slidesPerView: 2,
+              slidesPerView: 2.2,
               spaceBetween: 10,
             },
             768: {
@@ -76,7 +82,7 @@ export default function Main() {
               spaceBetween: 15,
             },
             992: {
-              slidesPerView: 3,
+              slidesPerView: 3.2,
               spaceBetween: 20,
             },
             1200: {
@@ -95,6 +101,71 @@ export default function Main() {
               />
             </SwiperSlide>
           ))}
+        </Swiper>
+      </div>
+      <div className="main-item event">
+        <div className="event-title">이벤트</div>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView="auto"
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.3,
+              spaceBetween: 10,
+            },
+            576: {
+              slidesPerView: 2.2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 15,
+            },
+            992: {
+              slidesPerView: 2.8,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 2.8,
+              spaceBetween: 25,
+            },
+          }}
+          className="mySwiper"
+        >
+          {Events.map((e) => (
+            <SwiperSlide key={e.id}>
+              <EventBox
+                EventPhoto={e.EventPhoto}
+                EventName={e.EventName}
+                EventScript={e.EventScript}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="main-item banner-area">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={banner1} alt="banner" className="banner" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={banner2} alt="banner" className="banner" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={banner3} alt="banner" className="banner" />
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

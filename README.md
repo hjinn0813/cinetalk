@@ -39,7 +39,9 @@ https://github.com/hjinn0813/cinetalk
 
   → friends, new 메뉴 예외처리 설정 (Not Found 페이지)
 
-- 최신 리뷰, 친구들의 리뷰 보여주기 (swiper slide)
+- 최신 리뷰, 친구들의 리뷰, 이벤트 카드 (swiper slide)
+
+- 최하단 광고 배너 자동 슬라이드 (swiper slide)
 
 ### 로그인
 
