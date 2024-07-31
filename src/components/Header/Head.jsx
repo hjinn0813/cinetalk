@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import PeopleIcon from '@mui/icons-material/People';
 import DescriptionIcon from '@mui/icons-material/Description';
 
-export default function Header() {
+export default function Head() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   return (
