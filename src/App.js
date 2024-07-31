@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Head from './components/Header/Head';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './pages/Main';
 import Login from './pages/Login';
@@ -14,7 +14,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <div className="App">
-      <Head />
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="search" element={<Search />} />
