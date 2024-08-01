@@ -46,6 +46,30 @@
 .main-author {
   color: $sub-gray;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .traffic-light {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    &.good {
+      background: linear-gradient(145deg, #4caf50, #388e3c);
+    }
+
+    &.neutral {
+      background: linear-gradient(145deg, #ffeb3b, #fbc02d);
+    }
+
+    &.bad {
+      background: linear-gradient(145deg, #f44336, #c62828);
+    }
+  }
 }
 
 .main-movie-title,
