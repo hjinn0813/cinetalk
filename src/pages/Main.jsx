@@ -2,9 +2,11 @@ import React from 'react';
 import '../styles/Main/Main.scss';
 import ReviewBox from '../components/Main/ReviewBox';
 import EventBox from '../components/Main/EventBox';
+import RankBox from '../components/Main/RankBox';
 import Reviews from '../components/Main/Reviews.json';
 import Friends from '../components/Main/Friends.json';
 import Events from '../components/Main/Events.json';
+import Boxoffice from '../components/Main/Boxoffice.json';
 
 import banner1 from '../assets/Main/banner1.jpg';
 import banner2 from '../assets/Main/banner2.png';
@@ -19,6 +21,29 @@ import 'swiper/css/pagination';
 export default function Main() {
   return (
     <section className="main-container">
+      <div className="main-item boxoffice-area">
+        <div className="boxoffice-title">이번주 박스오피스 순위</div>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          {Boxoffice.map((box) => (
+            <SwiperSlide key={box.id}>
+              <RankBox
+                Rank={box.Rank}
+                Boxoffice={box.Boxoffice}
+                RankName={box.RankName}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <div className="main-item new-posts">
         <div className="new">지금 뜨는 최신 글</div>
         <Swiper
@@ -56,6 +81,7 @@ export default function Main() {
                 MovieName={review.Movie_Name}
                 PostTitle={review.Post_Title}
                 author={review.author}
+                trafficLight={review.trafficLight}
               />
             </SwiperSlide>
           ))}
@@ -98,6 +124,7 @@ export default function Main() {
                 MovieName={review.Movie_Name}
                 PostTitle={review.Post_Title}
                 author={review.author}
+                trafficLight={review.trafficLight}
               />
             </SwiperSlide>
           ))}

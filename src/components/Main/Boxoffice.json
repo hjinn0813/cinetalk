@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "Rank": 1,
+    "Boxoffice": "boxoffice1.jfif",
+    "RankName": "데드풀과 울버린"
+  },
+  {
+    "id": 2,
+    "Rank": 2,
+    "Boxoffice": "boxoffice2.jfif",
+    "RankName": "슈퍼배드 4"
+  },
+  {
+    "id": 3,
+    "Rank": 3,
+    "Boxoffice": "boxoffice3.jfif",
+    "RankName": "파일럿"
+  },
+  {
+    "id": 4,
+    "Rank": 4,
+    "Boxoffice": "boxoffice4.jfif",
+    "RankName": "탈주"
+  },
+  {
+    "id": 5,
+    "Rank": 5,
+    "Boxoffice": "boxoffice5.jfif",
+    "RankName": "인사이드 아웃 2"
+  },
+  {
+    "id": 6,
+    "Rank": 6,
+    "Boxoffice": "boxoffice6.jfif",
+    "RankName": "명탐정 코난: 100만 달러의 펜타그램"
+  },
+  {
+    "id": 7,
+    "Rank": 7,
+    "Boxoffice": "boxoffice7.jfif",
+    "RankName": "핸섬가이즈"
+  },
+  {
+    "id": 8,
+    "Rank": 8,
+    "Boxoffice": "boxoffice8.jfif",
+    "RankName": "탈출: 프로젝트 사일런스"
+  },
+  {
+    "id": 9,
+    "Rank": 9,
+    "Boxoffice": "boxoffice9.jfif",
+    "RankName": "퍼펙트 데이즈"
+  },
+  {
+    "id": 10,
+    "Rank": 10,
+    "Boxoffice": "boxoffice10.jfif",
+    "RankName": "하이재킹"
+  }
+]
