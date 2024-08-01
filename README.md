@@ -41,7 +41,9 @@ https://github.com/hjinn0813/cinetalk
 
 - 최신 리뷰, 친구들의 리뷰, 이벤트 카드 (swiper slide)
 
-- 최하단 광고 배너 자동 슬라이드 (swiper slide)
+  → 리뷰에 신호등 표시로 사용자의 평가를 시각적으로 확인 가능
+
+- 최상단 박스오피스 순위, 최하단 광고 배너 자동 슬라이드 (swiper slide)
 
 ### 로그인
 
