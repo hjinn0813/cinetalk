@@ -169,7 +169,11 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┃ ┣ 📜Naver.jsx
  ┃ ┃ ┃ ┗ 📜Oauth.js
  ┃ ┃ ┣ 📂Main
+ ┃ ┃ ┃ ┣ 📜Boxoffice.json
+ ┃ ┃ ┃ ┣ 📜EventBox.jsx
+ ┃ ┃ ┃ ┣ 📜Events.json
  ┃ ┃ ┃ ┣ 📜Friends.json
+ ┃ ┃ ┃ ┣ 📜RankBox.jsx
  ┃ ┃ ┃ ┣ 📜ReviewBox.jsx
  ┃ ┃ ┃ ┗ 📜Reviews.json
  ┃ ┃ ┣ 📂Review
@@ -211,7 +215,9 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┃ ┃ ┣ 📜Login.scss
  ┃ ┃ ┃ ┗ 📜Naver.scss
  ┃ ┃ ┣ 📂Main
+ ┃ ┃ ┃ ┣ 📜EventBox.scss
  ┃ ┃ ┃ ┣ 📜Main.scss
+ ┃ ┃ ┃ ┣ 📜RankBox.scss
  ┃ ┃ ┃ ┗ 📜ReviewBox.scss
  ┃ ┃ ┣ 📂Profile
  ┃ ┃ ┃ ┗ 📜Profile.scss
@@ -234,7 +240,8 @@ https://github.com/hjinn0813/cinetalk
  ┃ ┗ 📜index.js
  ┣ 📜package-lock.json
  ┣ 📜package.json
- ┗ 📜README.md
+ ┣ 📜README.md
+ ┗ 📜vercel.json
 ```
 
 ---
