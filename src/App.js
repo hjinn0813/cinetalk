@@ -13,19 +13,21 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="search" element={<Search />} />
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="watched" element={<Watched />} />
-        <Route path="review/:id" element={<Review />} />
-        <Route path="write" element={<Write />} />
-        <Route path="NotFound" element={<NotFound />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="search" element={<Search />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="watched" element={<Watched />} />
+          <Route path="review/:id" element={<Review />} />
+          <Route path="write" element={<Write />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

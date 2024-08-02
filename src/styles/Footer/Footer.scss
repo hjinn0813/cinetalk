@@ -11,6 +11,9 @@
 .footer {
   background-color: $main-blue;
   height: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 .foot-container {
   padding: 3.75rem;
