@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import '../styles/Search/Search.scss';
+import SearchIcon from '@mui/icons-material/Search';
 
 const Search = () => {
   const [query, setQuery] = useState('');
@@ -47,14 +48,19 @@ const Search = () => {
 
   return (
     <div className="search-container">
-      <input
-        type="text"
-        className="search-input"
-        placeholder="작품, 배우를 검색해보세요"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyPress={handleKeyPress}
-      />
+      <div className="input-wrapper">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="작품, 키워드를 검색해보세요"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyPress={handleKeyPress}
+        />
+        <button onClick={handleSearch} className="search-btn">
+          <SearchIcon />
+        </button>
+      </div>
       <div className="movie-list">
         {loading ? (
           <p>검색 중입니다..⏳</p> // 로딩 중 메시지 표시
