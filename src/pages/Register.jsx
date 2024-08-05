@@ -143,14 +143,14 @@ export default function Register() {
       <div className="reg-input-area">
         <input
           type="text"
-          id="userName"
+          className="userName reg-focus"
           placeholder="이름"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
         />
         <input
           type="text"
-          id="regId"
+          className="regId reg-focus"
           placeholder="아이디"
           value={userId}
           onChange={(e) => handleIdChange(e)}
@@ -159,7 +159,7 @@ export default function Register() {
         <div className="regIdMsg">{idMsg}</div>
         <input
           type="password"
-          id="regPw"
+          className="regPw reg-focus"
           placeholder="비밀번호"
           value={userPw}
           onChange={(e) => handlePwChange(e)}
@@ -167,7 +167,7 @@ export default function Register() {
         />
         <input
           type="password"
-          id="regPw2"
+          className="regPw2 reg-focus"
           placeholder="비밀번호 확인"
           value={userPw2}
           onChange={(e) => handlePwChange(e, true)}
