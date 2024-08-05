@@ -63,7 +63,7 @@ export default function Login() {
       dispatch(loginSuccess());
       navigate('/Profile');
     } else {
-      dispatch(loginFailure('로그인 실패!'));
+      dispatch(loginFailure('로그인 실패!😭'));
     }
   };
 
@@ -78,7 +78,7 @@ export default function Login() {
       <div className="lg-input">
         <input
           type="text"
-          id="userId"
+          className="lg-focus userId"
           placeholder="아이디"
           value={userId}
           onChange={(e) => {
@@ -89,7 +89,7 @@ export default function Login() {
         />
         <input
           type="password"
-          id="password"
+          className="lg-focus password"
           placeholder="비밀번호"
           value={userPw}
           onChange={(e) => {

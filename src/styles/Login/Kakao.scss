@@ -9,6 +9,10 @@
   border-radius: 8px;
   padding: 1.25rem;
   margin: 16px 0;
-  width: 310px;
+  width: 43%;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 86%;
+  }
 }

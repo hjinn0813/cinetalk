@@ -21,26 +21,44 @@
   margin: 1.75rem 0;
 }
 
+// input area
 .lg-input {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
-#userId,
-#password {
+.userId,
+.password {
   border: 1.5px solid $main-blue;
   border-radius: 8px;
-  width: 292px;
+  width: 40%;
   height: 40px;
   margin: 12px 0;
-  padding: 8px;
+  padding: 8px 8px 8px 14px;
   display: flex;
+
+  // mediaquery
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 }
+
+.lg-focus:focus {
+  border-color: $main-blue;
+  outline: none;
+  box-shadow: 0 0 14px rgb(130, 130, 130);
+}
+
+// apply btn area
 .lg-apply {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 .lg-apply-btn {
   font-size: 1.125rem;
@@ -49,11 +67,16 @@
   border: none;
   border-radius: 8px;
   padding: 1.25rem;
-  margin: 12px;
-  width: 310px;
+  margin-top: 12px;
+  width: 43%;
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  // mediaquery
+  @media screen and (max-width: 768px) {
+    width: 86%;
+  }
 }
 .lg-error {
   font-size: 18px;
@@ -61,6 +84,7 @@
   margin: 12px 0;
 }
 
+// btn area
 .lg-btns {
   display: flex;
   align-items: center;
@@ -68,6 +92,7 @@
   flex-direction: column;
   margin: 50px;
   padding: 30px 0;
+  width: 100%;
 }
 
 // 회원가입 이동 버튼
@@ -79,8 +104,12 @@
   border-radius: 8px;
   padding: 1.25rem;
   margin: 16px;
-  width: 310px;
+  width: 43%;
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 86%;
+  }
 }
