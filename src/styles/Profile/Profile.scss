@@ -35,6 +35,13 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  &:hover {
+    border: 1.5px solid $main-blue;
+    background-color: $main-blue;
+    color: $sub-white;
+    box-shadow: 0 0 14px rgb(130, 130, 130);
+  }
 }
 .movingbtn {
   color: inherit;
