@@ -45,3 +45,12 @@
 .movingbtn {
   color: inherit;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  pointer-events: auto;
+  // 버튼이 클릭 가능하도록 설정
+}
+.swiper-button-disabled {
+  pointer-events: none;
+}
