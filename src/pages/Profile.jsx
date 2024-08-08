@@ -32,8 +32,16 @@ export default function Profile() {
             리뷰 작성하기
           </Link>
         </button>
-        <button className="m-btn">본 작품 캘린더</button>
-        <button className="m-btn">본 작품 통계</button>
+        <button className="m-btn">
+          <Link to="/NotFound" className="movingbtn">
+            본 작품 캘린더
+          </Link>
+        </button>
+        <button className="m-btn">
+          <Link to="/NotFound" className="movingbtn">
+            본 작품 통계
+          </Link>
+        </button>
         <button className="m-btn logout" onClick={handleLogout}>
           로그아웃
         </button>
