@@ -2,7 +2,7 @@
 @import '../root.scss';
 
 .r-wrap {
-  margin: 90px 40px;
+  @include inner-size;
 }
 
 .rp-title {
